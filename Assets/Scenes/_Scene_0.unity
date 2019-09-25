@@ -510,7 +510,7 @@ GameObject:
   - component: {fileID: 936177848}
   - component: {fileID: 936177847}
   m_Layer: 5
-  m_Name: Score Counter
+  m_Name: ScoreCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
