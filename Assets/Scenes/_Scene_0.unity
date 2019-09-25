@@ -232,8 +232,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -257,12 +257,36 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &548845357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5290870008461549988, guid: 8b90959b3bc40f541915242dce512029,
+    type: 3}
+  m_PrefabInstance: {fileID: 5290870009007494793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &548845360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548845357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6918e4ab9c43b4083b8ba4afa2b2dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 8945428185457517045, guid: 86cb2f0289e9ef143a198fdd748a7f7a,
+    type: 3}
+  speed: 11
+  leftAndRightEdge: 20
+  chanceToChangeDirections: 0.02
+  secondsBetweenAppleDrops: 1
 --- !u!1001 &5290870009007494793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -275,6 +299,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
+    - target: {fileID: 5290870008461549988, guid: 8b90959b3bc40f541915242dce512029,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5290870008461549991, guid: 8b90959b3bc40f541915242dce512029,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -283,7 +312,7 @@ PrefabInstance:
     - target: {fileID: 5290870008461549991, guid: 8b90959b3bc40f541915242dce512029,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5290870008461549991, guid: 8b90959b3bc40f541915242dce512029,
         type: 3}
@@ -329,6 +358,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290870008461549990, guid: 8b90959b3bc40f541915242dce512029,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290870009972018700, guid: 8b90959b3bc40f541915242dce512029,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290870009886485937, guid: 8b90959b3bc40f541915242dce512029,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b90959b3bc40f541915242dce512029, type: 3}
